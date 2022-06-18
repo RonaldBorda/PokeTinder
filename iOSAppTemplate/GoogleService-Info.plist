@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>25486484285-tsq8sl3rjmdm18qoh2o7rptomsr0i4ok.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.25486484285-tsq8sl3rjmdm18qoh2o7rptomsr0i4ok</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCuDn7_lJZbFXE8a1XfZqCo9TXGy1uIALY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>25486484285</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.tecsup.pokeTinder</string>
+	<key>PROJECT_ID</key>
+	<string>programacionmoviles-ios</string>
+	<key>STORAGE_BUCKET</key>
+	<string>programacionmoviles-ios.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:25486484285:ios:5f380a8d84eaed28d81b54</string>
+</dict>
+</plist>

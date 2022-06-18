@@ -22,6 +22,7 @@ struct ContentView: View {
             HomeButtonView(imageName: "flash-button")
             }
             .padding()
+
         }
     }
 }

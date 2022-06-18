@@ -8,18 +8,19 @@
 import SwiftUI
 
 struct LaunchView: View {
-    
+    // que hace esta linea?
     @EnvironmentObject var appState: AppState
     
     @StateObject var launchViewModel: LaunchViewModel=LaunchViewModel()
     var body: some View {
         ZStack {
-            Color.pink
+            Color.black
                 .ignoresSafeArea()
             
-            Text("iOSTemplateApp")
-                .font(.title)
-                .fontWeight(.semibold)
+            Image("TinderPNG")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width:300)
         }
     }
 }

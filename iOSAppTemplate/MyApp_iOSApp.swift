@@ -9,8 +9,8 @@ import SwiftUI
 
 @main
 struct MyApp_iOS: App {
-    
-    @StateObject var appState: AppState = AppState.shared
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject var appState: AppState = .shared
     
     var body: some Scene {
         WindowGroup {
@@ -18,16 +18,13 @@ struct MyApp_iOS: App {
             case .launch:
                 LaunchView()
                     .environmentObject(appState)
-            case .home:
-                ContentView()
+            case .main:
+                MainView()
                     .environmentObject(appState)
-            case .options:
-                ContentView()
-            case .profile:
-                ContentView()
+            case .signIn:
+                SignInView()
+                    .environmentObject(appState)
             }
         }
     }
-    
-    
 }
