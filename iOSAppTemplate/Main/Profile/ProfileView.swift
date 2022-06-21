@@ -22,7 +22,7 @@ struct ProfileView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .clipShape(RoundedRectangle(cornerRadius: 12))
-                    .frame(maxWidth:100)
+                    .frame(maxWidth:120)
                 Text(name)
                     .font(.system(size: 16, weight: .black))
                 Text(email)
