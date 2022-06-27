@@ -14,6 +14,7 @@ struct SignUpView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var name: String = ""
+    @State var alertError = false
     
     var body: some View {
         ScrollView{
@@ -53,11 +54,17 @@ struct SignUpView: View {
                     .frame(maxWidth: .infinity)
                     .background(.pink)
                     .cornerRadius(8)
-                    
-                    
-                    
                 }.padding()
-            
+                .alert(isPresented: $alertError){
+                    Alert(
+                        title: Text("Error"),
+                        message: Text(authViewModel.errorMessage),
+                        dismissButton: .default(Text("Ok"))
+                    )
+                }
+                .onReceive(authViewModel.$showError){ newValue in
+                    alertError = newValue
+                }
             }
     }
 }
